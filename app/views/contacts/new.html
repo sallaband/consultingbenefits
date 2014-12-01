@@ -1,0 +1,64 @@
+Enter your information
+<BR>
+  <%= form_for @contacts do |f| %>
+  First Name: <%= f.text_field :first_name %><BR>
+  Last Name: <%= f.text_field :last_name %>
+  Title:  <%= f.text_field :contact_title %><BR>
+  Company Name:  <%= f.text_field :company %><BR>
+  Phone: <%= f.text_field :phone %><BR>
+  Email: <%= f.text_field :email %><BR>
+  Question: <%= f.text_field :question %><BR>
+  Other Concerns: <%= f.text_field :other_topics %><BR>
+  The best way to reach you: <%= f.text_field :best_method %><BR>
+  The best time to contact you: <%= f.text_field :best_time %><BR>
+  <%= f.submit %>
+  <% end %>
+  
+  
+ Enter your information
+<BR> 
+ <%= form_for @contacts do |f| %> 
+<table width="200" border="1">
+  <tr>
+    <td>First Name:</td>
+    <td><%= f.text_field :first_name %></td>
+  </tr>
+  <tr>
+    <td>Last Name:</td>
+    <td><%= f.text_field :last_name %></td>
+  </tr>
+  <tr>
+    <td>Title: </td>
+    <td><%= f.text_field :contact_title %></td>
+  </tr>
+  <tr>
+    <td>Company Name:</td>
+    <td><%= f.text_field :company %></td>
+  </tr>
+  <tr>
+    <td>Phone:</td>
+    <td><%= f.text_field :phone %></td>
+  </tr>
+  <tr>
+    <td>Email:</td>
+    <td> <%= f.text_field :email %></td>
+  </tr>
+  <tr>
+    <td>Question:</td>
+    <td><%= f.text_field :question %></td>
+  </tr>
+  <tr>
+    <td>Other Concerns: </td>
+    <td><%= f.text_field :other_topics %></td>
+  </tr>
+  <tr>
+    <td>The best way to reach you:</td>
+    <td><%= f.text_field :best_method %></td>
+  </tr>
+    <tr>
+    <td>The best time to contact you:</td>
+    <td><%= f.text_field :best_time %></td>
+  </tr>
+</table>
+  <%= f.submit %>
+  <% end %>
