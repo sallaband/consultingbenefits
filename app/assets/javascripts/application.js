@@ -13,12 +13,10 @@
 
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require jquery.appear
 //= require jquery.easing
 //= require jquery-cookie
-//= require bootstrap-sprockets
-//= require bootstrap
+//= require jquery.turbolinks
 //= require common
 //= require jquery.validation
 //= require jquery.stellar
@@ -38,5 +36,8 @@
 //= require view.contact
 //= require custom
 //= require theme.init
-//= require theme.js
+//= require theme
+//= require turbolinks
+//= require bootstrap
+//= require bootstrap-sprockets
 //= require_tree .
