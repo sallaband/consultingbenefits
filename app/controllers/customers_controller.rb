@@ -1,5 +1,5 @@
 class CustomersController < ApplicationController
-    def new
+  def new
     @customers = Customer.new
   end
 
