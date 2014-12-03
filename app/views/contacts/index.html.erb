@@ -16,7 +16,6 @@
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
 
 
-
 	</head>
 	<body class="one-page" data-target=".single-menu" data-spy="scroll" data-offset="200">
 
@@ -27,7 +26,7 @@
 						<a href="index-6.html">
 							<!-- <img alt="Porto" width="111" height="54" data-sticky-width="82" data-sticky-height="40" src="img/logo.png">	 -->
 							<%= link_to image_tag("logo.png", :alt => 'Consulting Benefits', :width => '111', :height => '54', :data_sticky_width => '82', :data_sticky_height => '40') %>
-							</a>					
+							</a>
 						</h1>
 					<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
 						<i class="fa fa-bars"></i>
@@ -140,9 +139,7 @@
 									<div>
 										<div class="portfolio-item img-thumbnail">
 											<a class="thumb-info lightbox" href="#popupProject" data-plugin-options='{"type":"inline", preloader: false}'>
-												<!-- <img alt="" class="img-responsive" src="img/projects/project.jpg"> -->
 												<%= image_tag("projects/project.jpg", :alt => '', :class => 'img-responsive') %>
-												</div>
 												<span class="thumb-info-title">
 													<span class="thumb-info-inner">SEO</span>
 													<span class="thumb-info-type">Website</span>
@@ -157,7 +154,6 @@
 
 											<div class="row">
 												<div class="col-md-6">
-													<!-- <img class="img-thumbnail img-responsive" alt="" src="img/projects/project.jpg"> -->
 													<%= image_tag("projects/project.jpg", :alt => '', :class => 'img-thumbnail img-responsive') %>
 												</div>
 												<div class="col-md-6">
@@ -180,59 +176,49 @@
 											</div>
 										</div>
 									</div>
-
-
-
-
-
 									<div>
-										<%= content_tag(:div, class:"portfolio-item img-thumbnail") do -%>
-											<%= link_to("#popupProject2",class:"thumb-info lightbox", type:"inline", preloader:"false") do -%>
-												<%= image_tag("projects/project-1.jpg", :alt => "", :class => "img-responsive") %>
+										<div class="portfolio-item img-thumbnail">
+											<a class="thumb-info lightbox" href="#popupProject2" data-plugin-options='{"type":"inline", preloader: false}'>
+												<%= image_tag("projects/project-1.jpg", :alt => '', :class => 'img-responsive') %>
 												<span class="thumb-info-title">
 													<span class="thumb-info-inner">Okler</span>
 													<span class="thumb-info-type">Brand</span>
 												</span>
 												<span class="thumb-info-action">
-														<span title="Universal" class="thumb-info-action-icon">
-														<i class="fa fa-link"></i>
-													</span>
+													<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
 												</span>
-											<% end -%>
-											<% end -%>
-										<%= content_tag(:div,class:"popup-inline-content",id:"popupProject2") do -%>
-											<%= content_tag(:h2,"Okler") %>
-											<%= content_tag(:div, class: "row") do -%>
-													<%= content_tag(:div, class: "col-md-6") do -%>
+											</a>
+										</div>
+										<div id="popupProject2" class="popup-inline-content">
+											<h2>Okler</h2>
+
+											<div class="row">
+												<div class="col-md-6">
 													<%= image_tag("projects/project-1.jpg", :alt => '', :class => 'img-thumbnail img-responsive') %>
-												<% end -%>
-													<%= content_tag(:div, class: "col-md-6") do -%>
-													<%= content_tag(:h4) do -%>
-													Project <strong>Description</strong>
-													<% end -%>
-													<%= content_tag(:p, "Lorem ipsum dolor") %>
-													<%= link_to("Live Preview", "#", class:"btn btn-primary") %>
-													<%= content_tag(:span, "", class: "arrow hlb") %>
-													<%= content_tag(:h4, "Services", class: "push-top") %>
-													<%= content_tag(:ul, class: "list icons list-unstyled") do -%>
-													<li><%= fa_icon "check", text: "Design" %></li>
-													<li><%= fa_icon "check", text: "HTML/CSS" %></li>
-													<li><%= fa_icon "check", text: "Javascript" %></li>
-													<li><%= fa_icon "check", text: "Backend" %></li>
-													<% end -%>
-												<% end -%>
-											<% end -%>
-										<% end -%>
+												</div>
+												<div class="col-md-6">
+
+													<h4>Project <strong>Description</strong></h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus nibh sed elit mattis adipiscing. Fusce in hendrerit purus. Suspendisse potenti. Proin quis eros odio, dapibus dictum mauris. Donec nisi libero, adipiscing id pretium eget, consectetur sit amet leo. Nam at eros quis mi egestas fringilla non nec purus.</p>
+
+													<a href="#" class="btn btn-primary">Live Preview</a> <span class="arrow hlb"></span>
+
+													<h4 class="push-top">Services</h4>
+
+													<ul class="list icons list-unstyled">
+														<li><i class="fa fa-check"></i> Design</li>
+														<li><i class="fa fa-check"></i> HTML/CSS</li>
+														<li><i class="fa fa-check"></i> Javascript</li>
+														<li><i class="fa fa-check"></i> Backend</li>
+													</ul>
+
+												</div>
+											</div>
+										</div>
 									</div>
-
-
-
-
-
 									<div>
 										<div class="portfolio-item img-thumbnail">
 											<a class="thumb-info lightbox" href="#popupProject3" data-plugin-options='{"type":"inline", preloader: false}'>
-												<!-- <img alt="" class="img-responsive" src="img/projects/project-2.jpg"> -->
 												<%= image_tag("projects/project-2.jpg", :alt => '', :class => 'img-responsive') %>
 												<span class="thumb-info-title">
 													<span class="thumb-info-inner">The Fly</span>
@@ -248,7 +234,6 @@
 
 											<div class="row">
 												<div class="col-md-6">
-													<!-- <img class="img-thumbnail img-responsive" alt="" src="img/projects/project-2.jpg"> -->
 													<%= image_tag("projects/project-2.jpg", :alt => '', :class => 'img-thumbnail img-responsive') %>
 												</div>
 												<div class="col-md-6">
@@ -274,7 +259,6 @@
 									<div>
 										<div class="portfolio-item img-thumbnail">
 											<a class="thumb-info lightbox" href="#popupProject4" data-plugin-options='{"type":"inline", preloader: false}'>
-												<!-- <img alt="" class="img-responsive" src="img/projects/project-3.jpg"> -->
 												<%= image_tag("projects/project-3.jpg", :alt => '', :class => 'img-responsive') %>
 												<span class="thumb-info-title">
 													<span class="thumb-info-inner">The Code</span>
@@ -290,7 +274,6 @@
 
 											<div class="row">
 												<div class="col-md-6">
-													<!-- <img class="img-thumbnail img-responsive" alt="" src="img/projects/project-3.jpg"> -->
 													<%= image_tag("projects/project-3.jpg", :alt => '', :class => 'img-thumbnail img-responsive') %>
 												</div>
 												<div class="col-md-6">
@@ -316,7 +299,6 @@
 									<div>
 										<div class="portfolio-item img-thumbnail">
 											<a class="thumb-info lightbox" href="#popupProject5" data-plugin-options='{"type":"inline", preloader: false}'>
-												<!-- <img alt="" class="img-responsive" src="img/projects/project.jpg"> -->
 												<%= image_tag("projects/project.jpg", :alt => '', :class => 'img-responsive') %>
 												<span class="thumb-info-title">
 													<span class="thumb-info-inner">SEO</span>
@@ -332,7 +314,6 @@
 
 											<div class="row">
 												<div class="col-md-6">
-													<!-- <img class="img-thumbnail img-responsive" alt="" src="img/projects/project.jpg"> -->
 													<%= image_tag("projects/project.jpg", :alt => '', :class => 'img-thumbnail img-responsive') %>
 												</div>
 												<div class="col-md-6">
@@ -358,7 +339,6 @@
 									<div>
 										<div class="portfolio-item img-thumbnail">
 											<a class="thumb-info lightbox" href="#popupProject6" data-plugin-options='{"type":"inline", preloader: false}'>
-												<!-- <img alt="" class="img-responsive" src="img/projects/project-1.jpg"> -->
 												<%= image_tag("projects/project-1.jpg", :alt => '', :class => 'img-responsive') %>
 												<span class="thumb-info-title">
 													<span class="thumb-info-inner">Okler</span>
@@ -374,7 +354,6 @@
 
 											<div class="row">
 												<div class="col-md-6">
-													<!-- <img class="img-thumbnail img-responsive" alt="" src="img/projects/project-1.jpg"> -->
 													<%= image_tag("projects/project-1.jpg", :alt => '', :class => 'img-thumbnail img-responsive') %>
 												</div>
 												<div class="col-md-6">
@@ -400,7 +379,6 @@
 									<div>
 										<div class="portfolio-item img-thumbnail">
 											<a class="thumb-info lightbox" href="#popupProject7" data-plugin-options='{"type":"inline", preloader: false}'>
-												<!-- <img alt="" class="img-responsive" src="img/projects/project-2.jpg"> -->
 												<%= image_tag("projects/project-2.jpg", :alt => '', :class => 'img-responsive') %>
 												<span class="thumb-info-title">
 													<span class="thumb-info-inner">The Fly</span>
@@ -416,7 +394,6 @@
 
 											<div class="row">
 												<div class="col-md-6">
-													<!-- <img class="img-thumbnail img-responsive" alt="" src="img/projects/project-2.jpg"> -->
 													<%= image_tag("projects/project-2.jpg", :alt => '', :class => 'img-thumbnail img-responsive') %>
 												</div>
 												<div class="col-md-6">
@@ -442,7 +419,6 @@
 									<div>
 										<div class="portfolio-item img-thumbnail">
 											<a class="thumb-info lightbox" href="#popupProject8" data-plugin-options='{"type":"inline", preloader: false}'>
-												<!-- <img alt="" class="img-responsive" src="img/projects/project-3.jpg"> -->
 												<%= image_tag("projects/project-3.jpg", :alt => '', :class => 'img-responsive') %>
 												<span class="thumb-info-title">
 													<span class="thumb-info-inner">The Code</span>
@@ -458,7 +434,6 @@
 
 											<div class="row">
 												<div class="col-md-6">
-													<!-- <img class="img-thumbnail img-responsive" alt="" src="img/projects/project-3.jpg"> -->
 													<%= image_tag("projects/project-3.jpg", :alt => '', :class => 'img-thumbnail img-responsive') %>
 												</div>
 												<div class="col-md-6">
@@ -486,6 +461,7 @@
 						</div>
 					</div>
 				</section>
+
 
 				<div class="container">
 
@@ -653,7 +629,7 @@
 
 				</div>
 
-				<section class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/parallax.jpg);">
+				<section class="parallax" data-stellar-background-ratio="0.5" style="background-image: parallax.jpg">
 					<div class="container">
 						<div class="row center">
 							<div class="col-md-12">
@@ -760,7 +736,7 @@
 					</div>
 				</div>
 
-				<section class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/parallax-transparent.jpg);">
+				<section class="parallax" data-stellar-background-ratio="0.5" style="background-image: parallax-transparent.jpg">
 					<div class="container">
 						<div class="row center">
 							<div class="col-md-12">
@@ -788,41 +764,53 @@
 							</div>
 
 							<h2 class="short"><strong>Contact</strong> Us</h2>
-							<!-- <form id="contactForm" action="php/contact-form.php" method="POST">
-								<div class="row">
-									<div class="form-group">
-										<div class="col-md-6">
-											<label>Your name *</label>
-											<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required>
-										</div>
-										<div class="col-md-6">
-											<label>Your email address *</label>
-											<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group">
-										<div class="col-md-12">
-											<label>Subject</label>
-											<input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject" required>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group">
-										<div class="col-md-12">
-											<label>Message *</label>
-											<textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message" required></textarea>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<input type="submit" value="Send Message" class="btn btn-primary btn-lg" data-loading-text="Loading...">
-									</div>
-								</div>
-							</form> -->
+							<BR>
+								<%= form_for Contact.new do |f| %>
+								<table width="400" border="0">
+									<tr>
+										<td>First Name:</td>
+										<td><%= f.text_field :first_name %></td>
+									</tr>
+									<tr>
+										<td>Last Name:</td>
+										<td><%= f.text_field :last_name %></td>
+									</tr>
+									<tr>
+										<td>Title: </td>
+										<td><%= f.text_field :contact_title %></td>
+									</tr>
+									<tr>
+										<td>Company Name:</td>
+										<td><%= f.text_field :company %></td>
+									</tr>
+									<tr>
+										<td>Phone:</td>
+										<td><%= f.text_field :phone %></td>
+									</tr>
+									<tr>
+										<td>Email:</td>
+										<td> <%= f.text_field :email %></td>
+									</tr>
+									<tr>
+										<td>Question:</td>
+										<td><%= f.text_field :question %></td>
+									</tr>
+									<tr>
+										<td>Other Concerns: </td>
+										<td><%= f.text_field :other_topics %></td>
+									</tr>
+									<tr>
+										<td>The best way to reach you:</td>
+										<td><%= f.text_field :best_method %></td>
+									</tr>
+									<tr>
+										<td>The best time to contact you:</td>
+										<td><%= f.text_field :best_time %></td>
+									</tr>
+								</table>
+								<%= f.submit %>
+								<% end %>
+
 						</div>
 						<div class="col-md-6">
 
@@ -932,7 +920,7 @@
 				address: "217 Summit Boulevard, Birmingham, AL 35243",
 				html: "<strong>Alabama Office</strong><br>217 Summit Boulevard, Birmingham, AL 35243<br><br><a href='#' onclick='mapCenterAt({latitude: 33.44792, longitude: -86.72963, zoom: 16}, event)'>[+] zoom here</a>",
 				icon: {
-					image: "img/pin.png",
+					image: "pin.png",
 					iconsize: [26, 46],
 					iconanchor: [12, 46]
 				}
@@ -940,7 +928,7 @@
 				address: "645 E. Shaw Avenue, Fresno, CA 93710",
 				html: "<strong>California Office</strong><br>645 E. Shaw Avenue, Fresno, CA 93710<br><br><a href='#' onclick='mapCenterAt({latitude: 36.80948, longitude: -119.77598, zoom: 16}, event)'>[+] zoom here</a>",
 				icon: {
-					image: "img/pin.png",
+					image: "pin.png",
 					iconsize: [26, 46],
 					iconanchor: [12, 46]
 				}
@@ -948,7 +936,7 @@
 				address: "New York, NY 10017",
 				html: "<strong>New York Office</strong><br>New York, NY 10017<br><br><a href='#' onclick='mapCenterAt({latitude: 40.75198, longitude: -73.96978, zoom: 16}, event)'>[+] zoom here</a>",
 				icon: {
-					image: "img/pin.png",
+					image: "pin.png",
 					iconsize: [26, 46],
 					iconanchor: [12, 46]
 				}

@@ -16,6 +16,8 @@ Rails.application.config.assets.version = '1.0'
 #   end
 # end
 
+
+
 Rails.application.config.assets.precompile += [
 'jquery/jquery.js',
 'jquery.appear/jquery.appear.js',
@@ -41,7 +43,7 @@ Rails.application.config.assets.precompile += [
 'fontawesome/css/font-awesome.css',
 'owlcarousel/owl.carousel.css',
 'owlcarousel/owl.theme.css',
-'magnific-popup/magnific-popup.css',
+'magnific/popup/magnific-popup.css',
 'rs-plugin/css/settings.css',
 'circle-flip-slideshow/css/component.css']
 
@@ -58,5 +60,3 @@ Rails.application.config.assets.precompile += [
 'custom.js',
 'theme.init.js',
 'theme.js']
-
-Rails.application.config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.js *.css *.css.erb *.less)

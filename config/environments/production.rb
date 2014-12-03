@@ -14,7 +14,7 @@ Rails.application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
-  config.app_generators.stylesheet_engine :less
+  # config.app_generators.stylesheet_engine :scss
 
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
@@ -29,7 +29,7 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = true
+  config.assets.compile = false
 
   # Generate digests for assets URLs.
   config.assets.digest = true
@@ -75,11 +75,13 @@ Rails.application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
+  config.assets.enabled = true
+
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-
-  #config.less.paths << "vendor/assets/bootstrap/"
-  config.less.compress = true
-  config.assets.css_compressor :yui
+  #
+  # config.less.paths << "vendor/assets/bootstrap/"
+  # config.less.compress = true
+  # config.assets.css_compressor :yui
 
 end

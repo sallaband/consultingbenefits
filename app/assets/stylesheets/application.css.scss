@@ -1,0 +1,34 @@
+
+@import "theme.css";
+@import "theme-elements.css";
+@import "theme-blog.css";
+@import "theme-shop.css";
+@import "theme-animate.css";
+@import "owl.carousel.css";
+@import "owl.theme.css";
+@import "magnific-popup.css";
+@import "default.css";
+@import "custom.css";
+@import "font-awesome.css";
+@import "css/font-awesome.css";
+@import "css/settings.css";
+@import "css/component.css";
+@import "css/bootstrap.css";
+@import "font-awesome.css";
+
+
+/*
+ * This is a manifest file that*= require ll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You*= require re free to add application-wide styles to this file and they*= require ll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */

@@ -1,0 +1,27 @@
+{
+  "name": "consultingbenefits",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "index.html.erb",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sallaband/consultingbenefits.git"
+  },
+  "keywords": [
+    "accounting",
+    "and",
+    "finance"
+  ],
+  "author": "Sean Allaband",
+  "license": "none",
+  "bugs": {
+    "url": "https://github.com/sallaband/consultingbenefits/issues"
+  },
+  "homepage": "https://github.com/sallaband/consultingbenefits"
+}
