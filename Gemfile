@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.1.3'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -25,6 +26,7 @@ gem 'yui-compressor', '~> 0.12.0'
 gem 'actionpack'
 gem 'node'
 gem 'sprockets'
+gem 'rails_12factor'
 
 
 # Use jquery as the JavaScript library
