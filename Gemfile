@@ -27,6 +27,7 @@ gem 'actionpack'
 gem 'node'
 gem 'sprockets'
 gem 'rails_12factor'
+gem 'newrelic_rpm'
 
 
 # Use jquery as the JavaScript library
