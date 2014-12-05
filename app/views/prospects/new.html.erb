@@ -1,18 +1,59 @@
 Enter your information
 <BR>
-  <%= form_for @prospects do |f| %>
-  First Name: <%= f.text_field :first_name %><BR>
-  Last Name: <%= f.text_field :last_name %>
-  Contact Title:  <%= f.text_field :contact_title %><BR>
-  Company Name:  <%= f.text_field :contact_name %><BR>
-  Address: <%= f.text_area :contact_address %><BR>
-  Phone: <%= f.text_field :phone %><BR>
-  Email: <%= f.text_field :email %><BR>
-  Number of Employees: <%= f.text_field :number_employees %><BR>
-  Please describe your current accounting system: <%= f.text_area :current_accounting_system %><BR>
-  Please describe any outstanding loans: <%= f.text_area :loans %><BR>
-  Please describe the equity structure of the company: <%= f.text_area :equity %><BR>
-  Please list the way that bills are managed: <%= f.text_area :bills %><BR>
-  Please describe the way that invoices are produced: <%= f.text_area :invoices %><BR>
+ <%= form_for @prospects do |f| %>
+<table width="400" border="0">
+  <tr>
+    <td>First Name:</td>
+    <td><%= f.text_field :first_name %></td>
+  </tr>
+  <tr>
+    <td>Last Name:</td>
+    <td><%= f.text_field :last_name %></td>
+  </tr>
+  <tr>
+    <td>Title: </td>
+    <td><%= f.text_field :contact_title %></td>
+  </tr>
+  <tr>
+    <td>Company Name:</td>
+    <td><%= f.text_field :contact_name %></td>
+  </tr>
+  <tr>
+    <td>Phone:</td>
+    <td><%= f.text_field :phone %></td>
+  </tr>
+  <tr>
+    <td>Email:</td>
+    <td> <%= f.text_field :email %></td>
+  </tr>
+  <tr>
+    <td>Number of Employees:</td>
+    <td><%= f.text_field :number_employees %></td>
+  </tr>
+  <tr>
+    <td>Address:</td>
+    <td> <%= f.text_area :contact_address %></td>
+  </tr>
+  <tr>
+    <td>Please describe your current accounting system: </td>
+    <td> <%= f.text_area :current_accounting_system %></td>
+  </tr>
+  <tr>
+    <td>Please describe any outstanding loans: </td>
+    <td> <%= f.text_area :loans %></td>
+  </tr>
+  <tr>
+    <td>Please describe the equity structure of the company: </td>
+    <td> <%= f.text_area :equity %></td>
+  </tr>
+  <tr>
+    <td>Please describe the way that bills are managed: </td>
+    <td> <%= f.text_area :bills %></td>
+  </tr>
+  <tr>
+    <td>Please describe the way that invoices are managed: </td>
+    <td> <%= f.text_area :invoices %></td>
+  </tr>
+</table>
   <%= f.submit %>
   <% end %>

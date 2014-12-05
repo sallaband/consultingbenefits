@@ -1,18 +1,207 @@
 Enter your information
 <BR>
-  <%= form_for @customers do |f| %>
-  First Name: <%= f.text_field :first_name %><BR>
-  Last Name: <%= f.text_field :last_name %>
-  Contact Title:  <%= f.text_field :contact_title %><BR>
-  Company Name:  <%= f.text_field :contact_name %><BR>
-  Address: <%= f.text_area :contact_address %><BR>
-  Phone: <%= f.text_field :phone %><BR>
-  Email: <%= f.text_field :email %><BR>
-  Number of Employees: <%= f.text_field :number_employees %><BR>
-  Please describe your current accounting system: <%= f.text_area :current_accounting_system %><BR>
-  Please describe any outstanding loans: <%= f.text_area :loans %><BR>
-  Please describe the equity structure of the company: <%= f.text_area :equity %><BR>
-  Please list the way that bills are managed: <%= f.text_area :bills %><BR>
-  Please describe the way that invoices are produced: <%= f.text_area :invoices %><BR>
+ <%= form_for @customers do |f| %>
+<table width="600" border="0">
+  <tr>
+    <td>Legal Name:</td>
+    <td><%= f.text_field :legal_name %></td>
+  </tr>
+  <tr>
+    <td>DBA Name:</td>
+    <td><%= f.text_field :dba_name %></td>
+  </tr>
+  <tr>
+    <td>Alternate Phone Numbers:</td>
+    <td><%= f.text_area :alternate_phones %></td>
+  </tr>
+  <tr>
+    <td>Alternate Email Addresses:</td>
+    <td><%= f.text_area :alternate_emails %></td>
+  </tr>
+  <tr>
+    <td>Alternate Mailing Addresses:</td>
+    <td><%= f.text_area :alternate_address %></td>
+  </tr>
+  <tr>
+    <td>Quickbooks Online Username:</td>
+    <td> <%= f.text_field :quickbooks_username %></td>
+  </tr>
+  <tr>
+    <td>Quickbooks Online Password:</td>
+    <td> <%= f.text_field :quickbooks_password %></td>
+  </tr>
+  <tr>
+    <td>Bill.com Username:</td>
+    <td> <%= f.text_field :bdc_username %></td>
+  </tr>
+  <tr>
+    <td>Bill.com Password:</td>
+    <td> <%= f.text_field :bdc_password %></td>
+  </tr>
+  <tr>
+    <td>PayPal Username:</td>
+    <td> <%= f.text_field :paypal_username %></td>
+  </tr>
+  <tr>
+    <td>PayPal Password:</td>
+    <td> <%= f.text_field :paypal_password %></td>
+  </tr>
+  <tr>
+    <td>Bank Account #1 Website:</td>
+    <td> <%= f.text_field :bankone_login %></td>
+  </tr>
+  <tr>
+    <td>Bank Account #1 Username:</td>
+    <td> <%= f.text_field :bankone_username %></td>
+  </tr>
+  <tr>
+    <td>Bank Account #1 Password:</td>
+    <td> <%= f.text_field :bankone_password %></td>
+  </tr>
+  <tr>
+    <td>Bank Account #2 Website:</td>
+    <td> <%= f.text_field :banktwo_login %></td>
+  </tr>
+  <tr>
+    <td>Bank Account #2 Username:</td>
+    <td> <%= f.text_field :banktwo_username %></td>
+  </tr>
+  <tr>
+    <td>Bank Account #2 Password:</td>
+    <td> <%= f.text_field :banktwo_password %></td>
+  </tr>
+  <tr>
+    <td>Bank Account #3 Website:</td>
+    <td> <%= f.text_field :bankthree_login %></td>
+  </tr>
+  <tr>
+    <td>Bank Account #3 Username:</td>
+    <td> <%= f.text_field :bankthree_username %></td>
+  </tr>
+  <tr>
+    <td>Bank Account #3 Password:</td>
+    <td> <%= f.text_field :bankthree_password %></td>
+  </tr>
+  <tr>
+    <td>Bank Account #4 Website:</td>
+    <td> <%= f.text_field :bankfour_login %></td>
+  </tr>
+  <tr>
+    <td>Bank Account #4 Username:</td>
+    <td> <%= f.text_field :bankfour_username %></td>
+  </tr>
+  <tr>
+    <td>Bank Account #4 Password:</td>
+    <td> <%= f.text_field :bankfour_password %></td>
+  </tr>
+  <tr>
+    <td>Credit Card #1 Website:</td>
+    <td> <%= f.text_field :creditone_login %></td>
+  </tr>
+  <tr>
+    <td>Credit Card #1 Username:</td>
+    <td> <%= f.text_field :creditone_username %></td>
+  </tr>
+  <tr>
+    <td>Credit Card #1 Password:</td>
+    <td> <%= f.text_field :creditone_password %></td>
+  </tr>
+  <tr>
+    <td>Credit Card #2 Website:</td>
+    <td> <%= f.text_field :credittwo_login %></td>
+  </tr>
+  <tr>
+    <td>Credit Card #2 Username:</td>
+    <td> <%= f.text_field :credittwo_username %></td>
+  </tr>
+  <tr>
+    <td>Credit Card #2 Password:</td>
+    <td> <%= f.text_field :credittwo_password %></td>
+  </tr>
+  <tr>
+    <td>Credit Card #3 Website:</td>
+    <td> <%= f.text_field :creditthree_login %></td>
+  </tr>
+  <tr>
+    <td>Credit Card #3 Username:</td>
+    <td> <%= f.text_field :creditthree_username %></td>
+  </tr>
+  <tr>
+    <td>Credit Card #3 Password:</td>
+    <td> <%= f.text_field :creditthree_password %></td>
+  </tr>
+  <tr>
+    <td>Credit Card #4 Website:</td>
+    <td> <%= f.text_field :creditfour_login %></td>
+  </tr>
+  <tr>
+    <td>Credit Card #4 Username:</td>
+    <td> <%= f.text_field :creditfour_username %></td>
+  </tr>
+  <tr>
+    <td>Credit Card #4 Password:</td>
+    <td> <%= f.text_field :creditfour_password %></td>
+  </tr>
+  <tr>
+    <td>Payment Processing System Website:</td>
+    <td> <%= f.text_field :payment_login %></td>
+  </tr>
+  <tr>
+    <td>Payment Processing System Username:</td>
+    <td> <%= f.text_field :payment_username %></td>
+  </tr>
+  <tr>
+    <td>Payment Processing System Password:</td>
+    <td> <%= f.text_field :payment_password %></td>
+  </tr>
+  <tr>
+    <td>Payroll System Website:</td>
+    <td> <%= f.text_field :payroll_login %></td>
+  </tr>
+  <tr>
+    <td>Payroll System Username:</td>
+    <td> <%= f.text_field :payroll_username %></td>
+  </tr>
+  <tr>
+    <td>Payroll System Password:</td>
+    <td> <%= f.text_field :payroll_password %></td>
+  </tr>
+  <tr>
+    <td>Inventory Management System Website:</td>
+    <td> <%= f.text_field :inventory_login %></td>
+  </tr>
+  <tr>
+    <td>Inventory Management System Username:</td>
+    <td> <%= f.text_field :inventory_username %></td>
+  </tr>
+  <tr>
+    <td>Inventory Management System Password:</td>
+    <td> <%= f.text_field :inventory_password %></td>
+  </tr>
+  <tr>
+    <td>Customer Relationship Management System Website:</td>
+    <td> <%= f.text_field :crm_login %></td>
+  </tr>
+  <tr>
+    <td>Customer Relationship Management System Username:</td>
+    <td> <%= f.text_field :crm_username %></td>
+  </tr>
+  <tr>
+    <td>Customer Relationship Management System Password:</td>
+    <td> <%= f.text_field :crm_password %></td>
+  </tr>
+  <tr>
+    <td>Customer/Vendor Email Management (accounting@yourcompanyname.com) Website:</td>
+    <td> <%= f.text_field :customer_email_login %></td>
+  </tr>
+  <tr>
+    <td>Customer/Vendor Email Management Username:</td>
+    <td> <%= f.text_field :customer_email_username %></td>
+  </tr>
+  <tr>
+    <td>Customer/Vendor Email Management Password:</td>
+    <td> <%= f.text_field :customer_email_password %></td>
+  </tr>
+</table>
   <%= f.submit %>
   <% end %>

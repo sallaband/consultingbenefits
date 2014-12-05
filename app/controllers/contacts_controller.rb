@@ -6,7 +6,7 @@ class ContactsController < ApplicationController
   def create
     @contacts = Contact.new(user_params)
     if @contacts.save
-    redirect_to :index
+    redirect_to :new_contact
     end
   end
 
