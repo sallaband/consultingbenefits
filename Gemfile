@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 ruby '2.1.3'
 
 
@@ -28,6 +28,7 @@ gem 'node'
 gem 'sprockets'
 gem 'rails_12factor'
 gem 'newrelic_rpm'
+gem 'rails_12factor', group: :production
 
 
 # Use jquery as the JavaScript library

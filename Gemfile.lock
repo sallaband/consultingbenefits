@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     actionmailer (4.1.8)
       actionpack (= 4.1.8)
@@ -44,7 +44,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
-    columnize (0.8.9)
+    columnize (0.9.0)
     commonjs (0.2.7)
     debugger-linecache (1.2.0)
     erubis (2.7.0)
@@ -75,7 +75,7 @@ GEM
     mime-types (2.4.3)
     minitest (5.4.3)
     multi_json (1.10.1)
-    newrelic_rpm (3.9.7.266)
+    newrelic_rpm (3.9.8.273)
     node (0.0.2)
       eventmachine
     pg (0.17.1)
@@ -102,8 +102,8 @@ GEM
       activesupport (= 4.1.8)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (10.4.1)
-    rdoc (4.1.2)
+    rake (10.4.2)
+    rdoc (4.2.0)
       json (~> 1.4)
     ref (1.0.5)
     sass (3.4.9)
