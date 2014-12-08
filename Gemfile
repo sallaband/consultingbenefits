@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 ruby '2.1.3'
 
 
@@ -26,7 +26,6 @@ gem 'yui-compressor', '~> 0.12.0'
 gem 'actionpack'
 gem 'node'
 gem 'sprockets'
-gem 'rails_12factor'
 gem 'newrelic_rpm'
 gem 'rails_12factor', group: :production
 
