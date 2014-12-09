@@ -30,8 +30,6 @@ GEM
     arel (5.0.1.20140414130214)
     autoprefixer-rails (4.0.2)
       execjs
-    bootstrap-sass (3.3.1.0)
-      sass (~> 3.2)
     builder (3.2.2)
     byebug (3.5.1)
       columnize (~> 0.8)
@@ -52,8 +50,6 @@ GEM
     execjs (2.2.2)
     font-awesome-rails (4.2.0.0)
       railties (>= 3.2, < 5.0)
-    font-awesome-sass (4.2.2)
-      sass (~> 3.2)
     hike (1.2.3)
     i18n (0.6.11)
     jbuilder (2.2.5)
@@ -154,11 +150,9 @@ PLATFORMS
 DEPENDENCIES
   actionpack
   autoprefixer-rails
-  bootstrap-sass
   byebug
   coffee-rails (~> 4.0.0)
   font-awesome-rails
-  font-awesome-sass
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks

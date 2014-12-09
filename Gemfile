@@ -18,12 +18,10 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 gem 'byebug'
-gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 gem 'therubyracer'
 gem 'twitter-bootstrap-rails'
 gem 'font-awesome-rails'
-gem 'font-awesome-sass'
 gem 'less'
 gem 'less-rails'
 gem 'yui-compressor', '~> 0.12.0'

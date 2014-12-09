@@ -37,6 +37,5 @@
 //= require twitter.js
 //= require jquery_ujs
 //= require turbolinks
-//= require bootstrap.js
-//= require bootstrap-sprockets
+//= require js/bootstrap.js
 //= require_tree .
