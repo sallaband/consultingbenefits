@@ -3,6 +3,7 @@ ruby '2.1.3'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'sass-rails'
 gem 'sprockets-rails', '2.0.0'
 gem 'railties', '4.1.8'
 gem 'rails', '4.1.8'
