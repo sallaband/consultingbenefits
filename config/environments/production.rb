@@ -36,7 +36,7 @@ Rails.application.configure do
   # Generate digests for assets URLs.
   config.assets.digest = true
   #
-  config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.js *.css *.eot *.svg *.ttf *.otf)
+  config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.js *.css)
 
 
 # config.assets.precompile << Proc.new do |path|
