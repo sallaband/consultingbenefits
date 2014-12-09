@@ -49,7 +49,7 @@ config.assets.precompile << Proc.new do |path|
     app_assets_path = Rails.root.join('app', 'assets').to_path
     vendor_assets_path = Rails.root.join('vendor', 'assets').to_path
 
-    if ((full_path.starts_with? app_assets_path) || (full_path.starts_with? vendor_assets_path)) && (!path.starts_with? '_')
+    if ((full_path.starts_with? app_assets_path) && (!path.starts_with? '_') || (full_path.starts_with? vendor_assets_path)) && (!path.starts_with? '_')
       puts "including asset: " + full_path
       true
     else
