@@ -35,31 +35,31 @@ Rails.application.configure do
 
   # Generate digests for assets URLs.
   config.assets.digest = true
-  # 
-  # config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif,
-  #                                   "fontawesome-webfont.ttf",
-  #                                  "fontawesome-webfont.eot",
-  #                                  "fontawesome-webfont.svg",
-  #                                  "fontawesome-webfont.woff")
+  #
+  config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.js *.css,
+                                    "fontawesome-webfont.ttf",
+                                   "fontawesome-webfont.eot",
+                                   "fontawesome-webfont.svg",
+                                   "fontawesome-webfont.woff")
 
 
-config.assets.precompile << Proc.new do |path|
-  if path =~ /\.(css|js)\z/
-    full_path = Rails.application.assets.resolve(path).to_path
-    app_assets_path = Rails.root.join('app', 'assets').to_path
-    vendor_assets_path = Rails.root.join('vendor', 'assets').to_path
-
-    if ((full_path.starts_with? app_assets_path) && (!path.starts_with? '_') || (full_path.starts_with? vendor_assets_path)) && (!path.starts_with? '_')
-      puts "including asset: " + full_path
-      true
-    else
-      puts "excluding asset: " + full_path
-      false
-    end
-  else
-    false
-  end
-end
+# config.assets.precompile << Proc.new do |path|
+#   if path =~ /\.(css|js)\z/
+#     full_path = Rails.application.assets.resolve(path).to_path
+#     app_assets_path = Rails.root.join('app', 'assets').to_path
+#     vendor_assets_path = Rails.root.join('vendor', 'assets').to_path
+#
+#     if ((full_path.starts_with? app_assets_path) && (!path.starts_with? '_') || (full_path.starts_with? vendor_assets_path)) && (!path.starts_with? '_')
+#       puts "including asset: " + full_path
+#       true
+#     else
+#       puts "excluding asset: " + full_path
+#       false
+#     end
+#   else
+#     false
+#   end
+# end
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 

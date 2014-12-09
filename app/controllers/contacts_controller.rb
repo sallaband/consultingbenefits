@@ -6,7 +6,8 @@ class ContactsController < ApplicationController
   def create
     @contacts = Contact.new(user_params)
     if @contacts.save
-    redirect_to :new_contact
+    flash[:success]  = "Thank you for contacting us! We should repsond to your inquiries soon."
+    redirect_to new_contact_path
     end
   end
 
