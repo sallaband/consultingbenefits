@@ -869,8 +869,9 @@
 		</script>
 		 -->
 
-		<%= javascript_include_tag "http://maps.google.com/maps/api/js?sensor=false" %>
+
 		<script>
+		<%= javascript_include_tag "http://maps.google.com/maps/api/js?sensor=false" %>
 
 			/*
 			Map Settings
@@ -879,17 +880,8 @@
 					- http://universimmedia.pagesperso-orange.fr/geo/loc.htm
 					- http://www.findlatitudeandlongitude.com/find-address-from-latitude-and-longitude/
 
-			*/
 
-			// Map Markers
-			var mapMarkers = [{
-				address: "22284 Mission Boulevard, Hayward, CA 94541",
-				html: "<strong>California Office</strong><br>22284 Mission Boulevard, Hayward, CA 94541<br><br><a href='#' onclick='mapCenterAt({latitude: 33.44792, longitude: -86.72963, zoom: 16}, event)'>[+] zoom here</a>",
-				icon: {
-					image: "pin.png",
-					iconsize: [26, 46],
-					iconanchor: [12, 46]
-				}
+			*/
 			// },{
 			// 	address: "645 E. Shaw Avenue, Fresno, CA 93710",
 			// 	html: "<strong>California Office</strong><br>645 E. Shaw Avenue, Fresno, CA 93710<br><br><a href='#' onclick='mapCenterAt({latitude: 36.80948, longitude: -119.77598, zoom: 16}, event)'>[+] zoom here</a>",
@@ -906,6 +898,16 @@
 			// 		iconsize: [26, 46],
 			// 		iconanchor: [12, 46]
 			// 	}
+
+			// Map Markers
+			var mapMarkers = [{
+				address: "22284 Mission Boulevard, Hayward, CA 94541",
+				html: "<strong>California Office</strong><br>22284 Mission Boulevard, Hayward, CA 94541<br><br><a href='#' onclick='mapCenterAt({latitude: 33.44792, longitude: -86.72963, zoom: 16}, event)'>[+] zoom here</a>",
+				icon: {
+					image: "pin.png",
+					iconsize: [26, 46],
+					iconanchor: [12, 46]
+				}
 			}];
 
 			// Map Initial Location
