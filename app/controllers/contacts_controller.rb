@@ -11,13 +11,13 @@ class ContactsController < ApplicationController
   #   end
   # end
 def index
-   @contact = Contact.new(user_params)
+  @contact = Contact.new(user_params)
    @contacts = Contact.all
 end
 
-   def show
+def show
         @contacts = Contact.find(params[:id])
-    end
+end
 
 private
   def user_params
@@ -27,10 +27,12 @@ private
 end
 
 def create
-    @contacts = Contact.new(user_params)
+    @contacts = Contact.create
     if @contacts.save
       flash[:success]  = "Thank you for contacting us! We should repsond to your inquiries soon."
-      redirect_to new_contact_path
+      redirect_to @contacts
+    else
+      render 'new'
     end
 
     # respond_to do |format|
