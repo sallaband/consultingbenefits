@@ -735,17 +735,6 @@
 							<BR>
 								<table width="400" border="0">
 									<%= form_for @contact do |f| %>
-									<% if @contact.errors.any? %>
-									<div id="error_explanation">
-										<ul>
-											<% @contact.errors.full_messages.each do |msg| %>
-											<li>
-												<%= msg %>
-											</li>
-											<% end %>
-											<% end %>
-										</ul>
-									</div>
 									<tr>
 										<td>First Name:</td>
 										<td><%= f.text_field :first_name %></td>
@@ -787,7 +776,7 @@
 										<td><%= f.text_field :best_time %></td>
 									</tr>
 								</table>
-								<%= f.submit %>
+								<%= f.submit %><br>
 								<% end %>
 						</div>
 						<div class="col-md-6">
