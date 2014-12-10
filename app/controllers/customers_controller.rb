@@ -1,21 +1,21 @@
 class CustomersController < ApplicationController
   def new
-    @customers = Customer.new
+    @customer = Customer.new
   end
 
   def create
-    @customers = Customer.new(user_params)
-    if @customers.save
-    redirect_to new_customer_path
+    @customer = Customer.new(user_params)
+    if @customer.save
+      render "thanks"
+    else
+      flash.now[:errors] = @customer.errors.full_messages
+      render "new"
     end
-  end
-
-  def show
   end
 
   private
   def user_params
-    params.require(:customer).permit(:id, :legal_name, :dba_name, :alternate_address,
+    params[:customer].permit(:id, :legal_name, :dba_name, :alternate_address,
     :alternate_emails, :alternate_phones, :quickbooks_username, :quickbooks_password,
     :bdc_username, :bdc_password, :paypal_username, :paypal_password, :bankone_login,
     :bankone_username, :bankone_password, :banktwo_login, :banktwo_username, :banktwo_password,

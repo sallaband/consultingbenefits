@@ -1,6 +1,6 @@
 Enter your information
 <BR>
- <%= form_for @prospects do |f| %>
+ <%= form_for @prospect do |f| %>
 <table width="400" border="0">
   <tr>
     <td>First Name:</td>
@@ -56,4 +56,11 @@ Enter your information
   </tr>
 </table>
   <%= f.submit %>
+  <font color="red">
+    <% if flash.now[:errors] %>
+    <% flash.now[:errors].each do |error| %>
+    <%= error %><br>
+    <% end %>
+    <% end %>
+  </font>
   <% end %>

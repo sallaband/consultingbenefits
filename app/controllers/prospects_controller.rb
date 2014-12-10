@@ -1,21 +1,21 @@
 class ProspectsController < ApplicationController
-    def new
-    @prospects = Prospect.new
+  def new
+    @prospect = Prospect.new
   end
 
   def create
-    @prospects = Prospect.new(user_params)
-    if @prospects.save
-    redirect_to new_prospect_path
+    @prospect = Prospect.new(user_params)
+    if @prospect.save
+      render "thanks"
+    else
+      flash.now[:errors] = @prospect.errors.full_messages
+      render "new"
     end
-  end
-
-  def show
   end
 
   private
   def user_params
-    params.require(:prospect).permit(:id, :first_name, :last_name, :contact_name, :contact_title,
+    params[:prospect].permit(:id, :first_name, :last_name, :contact_name, :contact_title,
     :contact_address, :phone, :email, :number_employees, :current_accounting_system, :loans,
     :equity, :bills, :invoices)
   end
