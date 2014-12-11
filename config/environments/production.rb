@@ -38,6 +38,8 @@ Rails.application.configure do
   #
   config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.js *.css)
 
+  config.assets.precompile = [/^[-_a-zA-Z0-9]*\..*/]
+
 
 # config.assets.precompile << Proc.new do |path|
 #   if path =~ /\.(css|js)\z/
