@@ -1,4 +1,22 @@
-/*
+
+ @import "css/bootstrap.css";
+ @import "bootstrap.css";
+ @import "theme.css";
+ @import "theme-elements.css";
+ @import "theme-blog.css";
+ @import "theme-shop.css";
+ @import "theme-animate.css";
+ @import "owl.carousel.css";
+ @import "owl.theme.css";
+ @import "magnific-popup.css";
+ @import "default.css";
+ @import "css/font-awesome.css";
+ @import "css/settings.css";
+ @import "css/component.css";
+ @import "custom.css";
+ @import "font-awesome.css";
+
+ /*
  * This is a manifest file that*= require ll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -13,20 +31,3 @@
  *= require_tree .
  *= require_self
  */
-
- @import "theme.css";
- @import "theme-elements.css";
- @import "theme-blog.css";
- @import "theme-shop.css";
- @import "theme-animate.css";
- @import "owl.carousel.css";
- @import "owl.theme.css";
- @import "magnific-popup.css";
- @import "default.css";
- @import "css/font-awesome.css";
- @import "css/settings.css";
- @import "css/component.css";
- @import "css/bootstrap.css";
- @import "bootstrap.css";
- @import "custom.css";
- @import "font-awesome.css";
