@@ -155,6 +155,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
+  mail
   newrelic_rpm
   node
   pg

@@ -7,6 +7,7 @@ end
 def create
   @contact = Contact.new(user_params)
     if @contact.save
+      ContactMailer.thanks_email(@contact).deliver
       render "thanks"
     else
       flash.now[:errors] = @contact.errors.full_messages
