@@ -39,6 +39,16 @@ Rails.application.configure do
 
   config.assets.precompile = [/^[-_a-zA-Z0-9]*\..*/]
 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.gmail.com',
+    port:                 587,
+    domain:               'consultingbenefits.com',
+    user_name:            'seanthefinanceguy@gmail.com',
+    password:             'Football99',
+    authentication:       'plain',
+    enable_starttls_auto: true  }
+
 
 # config.assets.precompile << Proc.new do |path|
 #   if path =~ /\.(css|js)\z/
